@@ -1,0 +1,30 @@
+.page-tutorial {
+  height: 100%;
+}
+
+.tutorial-part {
+  display: none; // JS then makes display flex
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.8rem;
+  color: $secondary-color;
+}
+
+.tutorial-part-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background: white;
+  width: 600px;
+  height: 400px;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.7);
+}
+
+.tutorial-image img {
+  height: 200px;
+}

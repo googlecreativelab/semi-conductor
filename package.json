@@ -1,0 +1,32 @@
+{
+  "name": "yourchestra",
+  "version": "0.1.0",
+  "description": "Conduct an orchestra using your body & a browser",
+  "main": "src/index.html",
+  "author": "Rupert Parry",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html --out-dir build/",
+    "build-start": "mv src/config.js src/config.build.js && mv src/config.prod.js src/config.js",
+    "build-parcel": "parcel build src/index.html --out-dir dist/static/ --public-url '/static/'",
+    "build-finish": "mv dist/static/index.html dist/ && cp src/app.yaml dist/ && mv src/config.js src/config.prod.js && mv src/config.build.js src/config.js",
+    "build": "rm -rf dist/ && yarn run build-start && yarn run build-parcel && yarn run build-finish"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "chokidar-cli": "^1.2.1",
+    "concurrently": "^4.0.1",
+    "parcel-bundler": "^1.6.1",
+    "parcel-plugin-static-files-copy": "^1.2.4",
+    "sass": "^1.14.3"
+  },
+  "dependencies": {
+    "@tensorflow-models/posenet": "0.2.3",
+    "@tensorflow/tfjs": "0.13.3",
+    "babel-polyfill": "6.26.0",
+    "json5": "2.1.0",
+    "pixi.js": "4.8.2",
+    "tone": "13.3.11"
+  }
+}

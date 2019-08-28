@@ -1,0 +1,95 @@
+@import '_reset';
+
+/* Variable Declarations */
+
+$primary-color:  #ff8976 !default;
+$secondary-color: #313390 !default;
+$base-font-size: 19px;
+$video-width: 600px;
+$video-height: 500px;
+
+/* Base Elements */
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  min-width: 1000px;
+  min-height: 750px;
+}
+
+body, input, textarea, button {
+  font-family: 'Poppins', sans-serif;
+  font-size: $base-font-size;
+}
+
+body {
+  background: $secondary-color;
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.4;
+}
+
+a {
+  color: $primary-color;
+}
+
+a:hover {
+  // color: lighten($primary-color, 10);
+  background: darken($secondary-color, 10);
+  text-decoration: none;
+}
+
+/* Buttons */
+
+button, .button {
+  display: inline-block;
+  text-decoration: none;
+  border: 0;
+  -webkit-appearance: none;
+  background: $primary-color;
+  color: white;
+  cursor: pointer;
+  padding: 0.3rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $secondary-color;
+
+  // Animation
+  transform: translateY(0);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:focus, .button:focus { outline: 0 }
+
+.button-large {
+  font-size: 1.4rem;
+  padding: 0.6rem 1.5rem;
+}
+
+button:disabled {
+  color: white;
+}
+
+button:not([disabled]):hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Progress Bars */
+
+.progress {
+  background: none;
+  border: 6px solid $primary-color;
+}

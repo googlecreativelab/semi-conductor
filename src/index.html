@@ -1,0 +1,264 @@
+<!--
+Copyright 2019 Google LLC
+
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--
+    _____ ______ __  __ _____       _____ ____  _   _ _____  _    _  _____ _______ ____  _____  
+  / ____|  ____|  \/  |_   _|     / ____/ __ \| \ | |  __ \| |  | |/ ____|__   __/ __ \|  __ \ 
+ | (___ | |__  | \  / | | |______| |   | |  | |  \| | |  | | |  | | |       | | | |  | | |__) |
+  \___ \|  __| | |\/| | | |______| |   | |  | | . ` | |  | | |  | | |       | | | |  | |  _  / 
+  ____) | |____| |  | |_| |_     | |___| |__| | |\  | |__| | |__| | |____   | | | |__| | | \ \ 
+ |_____/|______|_|  |_|_____|     \_____\____/|_| \_|_____/ \____/ \_____|  |_|  \____/|_|  \_\                                                                           
+
+  Made in Australia. Beware of danger noodles   ---========(:)-<
+  -->
+
+  <!-- Standard meta tags -->
+  <title>Semi-Conductor</title>
+  <meta name="description" content="">
+  <meta name="author" content="Google Creative Lab">
+
+  <!-- Schema.org markup for Google+ (goodnight, sweet prince) -->
+  <meta itemprop="name" content="Semi-Conductor">
+  <meta itemprop="description" content="An AI experiment to conduct an orchestra inside your web browser.">
+  <meta itemprop="image" content="https://semiconductor.withgoogle.com/static/share_image.jpg">
+
+  <!-- Twitter card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@google">
+  <meta name="twitter:title" content="Semi-Conductor">
+  <meta name="twitter:description" content="An AI experiment to conduct an orchestra inside your web browser.">
+  <meta name="twitter:creator" content="@google">
+  <meta name="twitter:image:src" content="https://semiconductor.withgoogle.com/static/share_image.jpg">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Semi-Conductor" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://semiconductor.withgoogle.com" />
+  <meta property="og:image" content="http://semiconductor.withgoogle.com/static/share_image.jpg" />
+  <meta property="og:image:secure_url" content="https://semiconductor.withgoogle.com/static/share_image.jpg" />
+  <meta property="og:description" content="An AI experiment to conduct an orchestra inside your web browser." />
+
+  <!-- Favicons, fonts, stylesheets & scripts -->
+  <link rel="icon" type="image/png" href="assets/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/favicon-16x16.png" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.scss">
+  <script src="scripts/main.js" defer></script>
+</head>
+
+<!-- Hey nice, there's a bit of room down here for the body -->
+<body>
+  <div class="page-error">
+    <div class="error-container">
+      <img src="assets/error.svg" alt="A broken treble clef sign" />
+      <h2 class="error-title">We're in treble.</h2>
+      <p class="error-text">Something went wrong and I don't know what it is. Maybe you could just... sing along?</p>
+    </div>
+  </div>
+
+  <div class="dot-bg">
+    <div class="start-bg-fade"></div>
+    <div class="start-bg"></div>
+  </div>
+
+  <!-- INFO PAGE -->
+  <section class="page-info">
+    <div class="info-content-outer">
+      <div class="info-content">
+        <h1>How It Works</h1>
+        <p>Semi-Conductor is an experiment that lets you conduct your own
+          orchestra through your browser. You can move your arms to change
+          the tempo, volume, and instrumentation of a piece of music.</p>
+        <p>It uses Tensorflow.js, a machine learning library that works
+          in the browser, to map out your movements through your webcam.
+          An algorithm plays along to the score as you conduct, using hundreds
+          of tiny audio files from live recorded instruments.</p>
+        <p>Find more information about PoseNet
+          <a href="https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5" target="_blank">
+          on the TensorFlow blog</a>.</p>
+        <p>
+        <p>Built by Rupert Parry, Melissa Lu, Haylie Craig and Samantha
+          Cordingley from Google Creative Lab, Sydney.</p>
+        <p><button class="button-info-close">Back</button></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINISH PAGE -->
+  <section class="page-finish">
+    <div class="roses-container"></div>
+    <div class="finish-content-outer">
+      <div class="finish-content">
+        <p class="finish-text">Bravo!</p>
+        <button class="button-restart button-large">
+          Play Again
+        </button>
+      </div>
+    </div>
+  </section>  
+
+  <!-- START PAGE -->
+  <section class="page-start">
+    <div class="start-content">
+      <h1 class="start-logo">
+        <img src="assets/logo.gif" alt="Semi-Conductor" class="start-logo-image">
+      </h1>
+      <h2 class="start-subtitle">Conduct an AI orchestra through your browser</h2>
+      <div class="start-button-container">
+        <button class="button-large progress start-button" disabled>
+          Loading...
+        </button>
+      </div>
+    </div>
+
+    <footer class="start-footer">
+      <img src="assets/footer-intro.svg"
+        class="start-footer-image"
+        alt="This is an A.I. Experiment. Made with some friends from Google.">
+    </footer>
+  </section>
+
+  <!-- TUTORIAL PAGE -->
+  <section class="page-tutorial">
+    <section class="tutorial-part tutorial-part-1">
+      <div class="card tutorial-part-content">
+        <div class="tutorial-text">
+          Make the orchestra play by moving your arms.
+          <br>The faster you go, the faster they go.
+        </div>
+        <div class="tutorial-image">
+          <img src="assets/tutorial-conducting.gif">
+        </div>
+        <div class="tutorial-controls">
+          <button class="button-large tutorial-next">Next</button>
+        </div>
+      </div>
+    </section>
+    <section class="tutorial-part tutorial-part-2">
+      <div class="card tutorial-part-content">
+        <div class="tutorial-text">
+          Move up and down to play louder and softer
+        </div>
+        <div class="tutorial-image">
+          <img src="assets/tutorial-volume.gif">
+        </div>
+        <div class="tutorial-controls">
+          <button class="button-large tutorial-next">Next</button>
+        </div>
+      </div>
+    </section>
+    <section class="tutorial-part tutorial-part-3">
+      <div class="card tutorial-part-content">
+        <div class="tutorial-text">
+          Move from side-to-side to control which sections play
+        </div>
+        <div class="tutorial-image">
+          <img src="assets/tutorial-sections.gif">
+        </div>
+        <div class="tutorial-controls">
+          <button class="button-large tutorial-end">Let's go</button>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- MAIN PAGE -->
+  <section class="page-main">
+    <nav class="main-topbar">
+      <div class="main-topbar-buttons">
+        <button class="button-restart">
+          <img src="assets/icon-restart.svg" alt="Restart">
+        </button>
+        <button class="button-info">
+            <img src="assets/icon-info.svg" alt="Info">
+        </button>
+      </div>
+      <div class="timebar">
+        <div class="song-title song-progress progress"></div>
+      </div>
+      <h1><img class="main-topbar-logo" src="assets/logo.gif"></h1>
+    </nav>
+
+    <div class="orchestra-container">
+      <div class="tempo-meter-container">
+        <div class="tempo-meter-container-inner">
+            <div class="tempo-icon-container">
+              <div class="tempo-icon">
+                <img src="assets/metronome.svg">
+                <div class="tempo-icon-label">TEMPO</div>
+              </div>
+              
+            </div>
+        <div class="tempo-meter-clipping-box">
+          <div class="tempo-meter"></div>
+          <div class="tempo-meter-background"></div>
+        </div>
+        </div>
+      </div>
+
+      <div class="orchestra">
+        
+      </div>
+    </div>
+
+    <div class="video-outer">
+      <div class="video-container">
+        <div class="video-label top">LOUDER</div>
+        <div class="video-label left">HIGH STRINGS</div>
+        <div class="video-label bottom">SOFTER</div>
+        <div class="video-label right">LOW STRINGS</div>
+
+        <div class="video-border">
+          <div class="calibration-overlay">
+            <img src="assets/calibration-overlay.png">
+          </div>
+          <div class="conducting-overlay"></div>
+          <div class="countdown-overlay">
+            <p class="countdown-text"></p>
+          </div>
+        </div>
+      </div>
+      <div class="instructions">
+        <p>Fit your body in frame, Maestro. This is a one person experiment.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-129142084-1', 'auto');
+  ga('set', 'referrer', document.referrer.split('?')[0]);
+  ga('send', 'pageview');
+  </script>
+  <!-- End Google Analytics -->
+</body>
+</html>

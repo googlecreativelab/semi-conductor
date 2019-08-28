@@ -1,0 +1,235 @@
+{
+	"frames": {
+		"cello": {
+			"frame": {
+				"x": 1,
+				"y": 1,
+				"w": 123,
+				"h": 221
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 123,
+				"h": 221
+			},
+			"sourceSize": {
+				"w": 123,
+				"h": 221
+			}
+		},
+		"celloBow": {
+			"frame": {
+				"x": 126,
+				"y": 1,
+				"w": 10,
+				"h": 116
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 10,
+				"h": 116
+			},
+			"sourceSize": {
+				"w": 10,
+				"h": 116
+			}
+		},
+		"contrabass": {
+			"frame": {
+				"x": 138,
+				"y": 1,
+				"w": 147,
+				"h": 280
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 147,
+				"h": 280
+			},
+			"sourceSize": {
+				"w": 147,
+				"h": 280
+			}
+		},
+		"contrabassBow": {
+			"frame": {
+				"x": 287,
+				"y": 1,
+				"w": 11,
+				"h": 147
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 11,
+				"h": 147
+			},
+			"sourceSize": {
+				"w": 11,
+				"h": 147
+			}
+		},
+		"stage": {
+			"frame": {
+				"x": 1,
+				"y": 283,
+				"w": 1345,
+				"h": 540
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1345,
+				"h": 540
+			},
+			"sourceSize": {
+				"w": 1345,
+				"h": 540
+			}
+		},
+		"string ensemble 1": {
+			"frame": {
+				"x": 300,
+				"y": 1,
+				"w": 53,
+				"h": 117
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 53,
+				"h": 117
+			},
+			"sourceSize": {
+				"w": 53,
+				"h": 117
+			}
+		},
+		"string ensemble 1Bow": {
+			"frame": {
+				"x": 355,
+				"y": 1,
+				"w": 6,
+				"h": 49
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 6,
+				"h": 49
+			},
+			"sourceSize": {
+				"w": 6,
+				"h": 49
+			}
+		},
+		"viola": {
+			"frame": {
+				"x": 363,
+				"y": 1,
+				"w": 58,
+				"h": 139
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 58,
+				"h": 139
+			},
+			"sourceSize": {
+				"w": 58,
+				"h": 139
+			}
+		},
+		"violaBow": {
+			"frame": {
+				"x": 423,
+				"y": 1,
+				"w": 7,
+				"h": 70
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 7,
+				"h": 70
+			},
+			"sourceSize": {
+				"w": 7,
+				"h": 70
+			}
+		},
+		"violin": {
+			"frame": {
+				"x": 432,
+				"y": 1,
+				"w": 53,
+				"h": 116
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 53,
+				"h": 116
+			},
+			"sourceSize": {
+				"w": 53,
+				"h": 116
+			}
+		},
+		"violinBow": {
+			"frame": {
+				"x": 487,
+				"y": 1,
+				"w": 6,
+				"h": 49
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 6,
+				"h": 49
+			},
+			"sourceSize": {
+				"w": 6,
+				"h": 49
+			}
+		}
+	},
+	"meta": {
+		"app": "http://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "spritesheet.png",
+		"format": "RGBA8888",
+		"size": {
+			"w": 1347,
+			"h": 824
+		},
+		"scale": "1"
+	}
+}

@@ -1,0 +1,68 @@
+.page-finish {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: rgba($secondary-color, 0.9);
+
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.finish-content-outer {
+  display: flex;
+  position: fixed;
+  z-index: 1100;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.finish-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  transform: scale(0.8);
+  transition: transform 0.7s ease-in-out;
+}
+
+.finish-text {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-finish.fade-in {
+  opacity: 1;
+}
+
+.page-finish.fade-in .finish-content-outer {
+  transform: scale(1);
+}
+
+.roses-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1100;
+}
+
+.rose {
+  position: absolute;
+  top: -60px;
+  width: 200px;
+}
+
+.rose img {
+  width: 200px;
+}

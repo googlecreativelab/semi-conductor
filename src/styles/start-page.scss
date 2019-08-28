@@ -1,0 +1,47 @@
+/* Main Content */
+
+.page-start {
+  // Make footer sticky
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.start-content {
+  text-align: center;
+
+  // Vertically center heading & button
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  // Make footer sticky
+  flex: 1;
+}
+
+.start-logo-image {
+  max-width: 500px;
+}
+
+.start-subtitle {
+  margin-top: -50px;
+  margin-bottom: 52px;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+}
+
+/* Footer */
+
+.start-footer {
+  display: flex;
+  align-items: left;
+}
+
+.start-footer-image {
+  max-height: 100px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}

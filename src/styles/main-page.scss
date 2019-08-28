@@ -1,0 +1,315 @@
+/* Main Page */
+
+.page-main {
+  height: 100%;
+  display: none; // flex
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header */
+
+.main-topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.main-topbar-buttons {
+  padding: 13px 0;
+  margin-right: 15px;
+}
+
+.main-topbar-buttons button {
+  margin-right: 10px;
+}
+
+.button-restart img {
+  width: 16px;
+}
+
+.button-info img {
+  width: 10px;
+}
+
+.main-topbar-logo {
+  width: 250px;
+}
+
+/* Video Element */
+
+.video-outer {
+  display: flex;
+  height: 100%;
+  margin-top: -150px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-border {
+  position: relative;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 10px solid $primary-color;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+  min-width: $video-width;
+  min-height: $video-height;
+  transition: border-color 1.5s ease-in-out, box-shadow 1.5s ease-in-out;
+}
+
+.video-container {
+  min-width: $video-width;
+  min-height: $video-height;
+  // For transition
+  transform: scale(1);
+  transition: transform 1.5s ease-in-out;
+}
+
+.calibration-overlay {
+  position: absolute;
+  min-width: 600px;
+  width: 600px;
+  height: 500px;
+  min-height: 500px;
+  background: rgba(255, 0, 0, 0.3);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.calibration-overlay img {
+  width: 500px;
+}
+
+.calibration-overlay.success {
+  background: rgba(green, 0.3);
+}
+
+.conducting-overlay {
+  display: none;
+  position: absolute;
+  min-width: 600px;
+  width: 600px;
+  height: 500px;
+  min-height: 500px;
+  background: rgba(27, 25, 111, 0.33);
+}
+
+.video-container canvas {
+  margin-bottom: -3px;
+}
+
+.instructions {
+  color: white;
+  margin-top: 25px;
+  opacity: 1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.orchestra-container {
+  max-height: 0%;
+  height: 0%;
+  opacity: 0;
+  transition: height 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+.countdown-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background: rgba($secondary-color, 0.5);
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.countdown-overlay p {
+  font-size: 400px;
+  color: white;
+  text-shadow: 0 5px 30px rgba(0,0,0,0.3);
+}
+
+/* Timebar */
+
+.timebar {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  padding-left: 95px;
+  opacity: 0;
+  transition: opacity 2.5s ease-in-out;
+}
+
+.video-label {
+  position: absolute;
+  color: rgba(255,255,255,0.5);
+  font-weight: bold;
+  font-size: 58px;
+  width: 600px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 2.5s ease-in-out;
+  transition-delay: 2.5s;
+}
+
+.video-label.left {
+  width: 500px;
+  left: -300px;
+  top: 250px;
+  transform: rotateZ(-90deg);
+}
+
+.video-label.right {
+  width: 500px;
+  right: -300px;
+  top: 250px;
+  transform: rotateZ(-90deg);
+}
+
+.video-label.top {
+  top: -80px;
+}
+
+.video-label.bottom {
+  bottom: -80px;
+}
+
+.tempo-icon-container {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  color: white;
+  z-index: 300;
+}
+
+.tempo-icon img {
+  height: 40px;
+  margin-bottom: 4px;
+}
+
+.tempo-icon {
+  opacity: 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.tempo-icon-label {
+  font-size: 14px;
+  color: rgba(255,255,255,0.6);
+}
+
+.song-progress {
+  width: 300px;
+  border-radius: 20px;
+  height: 25px;
+
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.orchestra {
+  margin-bottom: -170px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.tempo-meter-container {
+  position: absolute;
+  padding-top: 272px;
+  min-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tempo-meter-container-inner {
+  width: 290px;
+  height: 145px;
+}
+
+.tempo-meter-clipping-box {
+  width: 290px;
+  height: 145px;
+  overflow: hidden;
+  transform: scaleY(0.8);
+}
+
+.tempo-meter {
+  position: relative;
+  width: 290px;
+  height: 145px;
+  z-index: 150;
+  border-bottom: 10px solid #4058D3;
+  border-radius: 145px 145px 0 0;
+  transform-origin: bottom center;
+  transform: rotateZ(-178deg);
+  transition: border-color 0.5s;
+}
+
+.tempo-meter-background {
+  position: absolute;
+  top: 0;
+  width: 290px;
+  height: 145px;
+  z-index: 100;
+  background: #2b2984;
+  border-radius: 145px 145px 0 0;
+}
+
+
+.tempo-meter.stopped {
+  border-color: #4c4aa0;
+}
+
+.tempo-meter.fast {
+  border-color: #a20258;
+}
+
+/* Conducting Mode */
+
+.conducting-mode .timebar {
+  opacity: 1;
+}
+
+.conducting-mode .countdown-overlay {
+  opacity: 1;
+}
+
+.conducting-mode .video-container {
+  transform: scale(0.4);
+}
+
+.conducting-mode .video-label {
+  opacity: 1;
+}
+
+.conducting-mode .video-border {
+  border-color: rgba($primary-color, 0);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0);
+}
+
+.conducting-mode .orchestra-container {
+  height: 500px;
+  max-height: 500px;
+  opacity: 1;
+  padding-top: 65px;
+}
+
+.conducting-mode .instructions {
+  opacity: 0;
+}
