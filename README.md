@@ -59,8 +59,8 @@ Built by [Rupert Parry](https://www.rparry.me/), [Melissa Lu](https://melissalud
 
 ## License & Notes
 
-Semi-Conductor has been made available under the Apache 2.0 license (see LICENSE file in this repository for details).
+Semi-Conductor has been made available under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0) (see LICENSE file in this repository for details).
 
 We encourage open sourcing projects as a way of learning from each other. Please respect our and other creators’ rights, including copyright and trademark rights when present when sharing these works and creating derivative work. If you want more info on Google's policy, you can find it [here](https://www.google.com/permissions/). To contribute to the project, please refer to the CONTRIBUTING file in this repository.
 
-Semi-Conductor is not an officially supported Google product.
+This is an experiment, not an official Google product. We do our best to support and maintain this experiment, but your mileage may vary. 
